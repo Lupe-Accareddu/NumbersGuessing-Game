@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Number Guess Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" type="svg" href="./2976460_blossom_decoration_flower_garden_plant_icon.svg">
+    </head>
+     <body>
+        <div class="rules">
+            <b class="rul">Reglas:</b>
+            <ol class="lista-reglas">
+                <li>♦ Se debe adivinar un numero aleatorio entre 1 y 100 incluido ambos numeros.</li>
+                <li>♦ Tenes 10 oportunidades para adivinar el numero correcto.</li>
+                <li>♦ Si adivinas el numero dentro de las 10 oportunidades ganaste.</li>
+                <li>♦ Pierdas o ganes con el boton de Reiniciar podes jugar denuevo.</li>
+            </ol>
+        </div>
+        <button id="start" class="started">¡Comienza el Juego!</button>
+        <div class="game">
+            <form id="myForm">
+                <input class="formText"  type="number" id="guess" min="1" max="100">
+                <input type="submit" id="submit" value="Chequear">
+            </form>
+            <div id="prevGuessLabel">
+                Suposiciones Anteriores:
+                <b id="anterioresSupo"></b>
+            </div>
+            <br><br>
+            <div id="hint"></div>
+        </div>
+        <div id="gameover"></div>
+        <button id="reiniciar" class="restart"  onclick="reload()">Reiniciar</button>
+        <script src="juego.js"></script>
+    </body>
+</html>

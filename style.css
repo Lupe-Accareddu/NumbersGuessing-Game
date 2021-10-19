@@ -1,0 +1,124 @@
+html{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body{
+    position: relative;
+    padding: 20px;
+    height: 300px;
+    background-color: #2E765E;
+    font-family: sans-serif;
+    transition: 6s ease-in;
+  }
+  header{
+    text-align: center;
+    color: #E2808A;
+    margin-top: 30px;
+  }
+  li{
+    margin: 10px;
+  }
+  .rules{
+    text-align: left;
+  }
+
+  .rul{
+    color: #F1CCD7;
+    font-size: 50px;
+    font-weight: 100;
+  }
+
+  .lista-reglas{
+    color: #F1CCD7;
+    font-size: 20px;
+  }
+
+  #start{
+    margin: 10px auto 5px auto;
+  }
+  
+  .started, .restart, #submit{
+    color: #2E765E;
+    font-size: 17px;
+    background-color: #E2808A;
+    border-radius: 50px;
+    padding: 13px 23px;
+  }
+
+  .started:hover, .restart:hover, #submit:hover{
+    background-color: #638C80;
+    color: #E2808A;
+  }
+
+  form{
+    text-align: center;
+    margin-top: 40px;
+    transition: 8s ease-out;
+  }
+
+ .formText{
+     color: #F1CCD7;
+
+ }
+
+
+ #hint, #gameover{
+    color: #F1CCD7;
+    font-weight: bolder;
+ }
+
+  input{
+    padding: 5px;
+    border: none;
+    outline: none;
+    margin: 5px;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  #prevGuessLabel{
+    color: #638C80;
+    font-size: 20px;
+    float:left;
+    margin: 15px;
+  }
+  button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: bolder;
+  }
+  #guess{
+    border-radius: 15px;
+    padding: 10px;
+    width: 30%;
+    background-color: #638C80;
+  }
+  #submit{
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 9px 23px;
+    font-weight: bolder;
+  }
+  .game{
+    display: none;
+  }
+  .restart{
+    display: none;
+    text-align: center;
+    margin: 10px auto;
+  }
+  #hint{
+    margin: 50px auto;
+    text-align:center;
+  }
